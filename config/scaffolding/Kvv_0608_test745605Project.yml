@@ -11,12 +11,6 @@ packages:
   version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
-- name: TPP_services_in_FCS
-  version: "1.0"
-  gitServerName: kvv
-  gitUrl: https://github.com/Karthik-V-IBM-10
-  gitUsername: Karthik-V-IBM-10
-  gitBranch: main
 - name: SIQAJDBCAdapterTests
   version: "1.0"
   gitServerName: kvv
@@ -53,14 +47,20 @@ packages:
   gitUrl: https://github.com/prabhakarsag
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: TPP_services_in_FCS
+  version: "1.0"
+  gitServerName: kvv
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -82,9 +82,9 @@ services:
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -106,9 +106,9 @@ services:
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -130,9 +130,9 @@ services:
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -154,13 +154,45 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2065
+- serviceName: project.kvv_0608_test745605.integrations:JMSFlowTest
+  packages:
+  - name: Kvv_0608_test745605Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: publisher:publisher
+  packages:
+  - name: JMSTest
+    version: "1.0"
+- serviceName: pub.jms:send
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2065
 - serviceName: project.kvv_0608_test745605.integrations:JMS_JNDI_SSL
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -182,17 +214,13 @@ services:
   packages:
   - name: JMS2waySSL
     version: "1.0"
-- serviceName: pub.jms:send
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2065
 - serviceName: project.kvv_0608_test745605.integrations:SIQAAdapterFlow
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -214,9 +242,9 @@ services:
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -246,9 +274,9 @@ services:
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -278,9 +306,9 @@ services:
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -310,13 +338,61 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.2065
+- serviceName: project.kvv_0608_test745605.integrations:refdaf
+  packages:
+  - name: Kvv_0608_test745605Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: project.kvv_0608_test745605.referencedata:ref1
+  packages:
+  - name: Kvv_0608_test745605Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 10.7.0.0.66
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.kvv_0608_test745605.integrations:tpp
   packages:
   - name: Kvv_0608_test745605Project
     version: "1.0"
-  - name: TPP_services_in_FCS
-    version: "1.0"
   - name: JMS2waySSL
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
