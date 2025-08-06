@@ -28,6 +28,14 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+- serviceName: project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:test_action
+  packages:
+  - name: Kvv_0608_test745605Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 - serviceName: project.kvv_0608_test745605.integrations:SIQAAdapterFlow
   packages:
   - name: Kvv_0608_test745605Project
