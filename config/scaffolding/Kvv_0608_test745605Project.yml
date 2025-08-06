@@ -17,6 +17,11 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: SIQAJDBCAdapterTests
+  gitServerName: kvv
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
 services:
 - serviceName: project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1
   packages:
@@ -127,22 +132,10 @@ services:
   - name: TPP_services_in_FCS
     version: "1.0"
 configurationVariables:
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
-  : 9.46.196.248
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
-  : NO_TRANSACTION
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
-  : loginTimeout=60;driverType=thin;
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
-  : com.mysql.cj.jdbc.MysqlDataSource
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
-  : "false"
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
-  : "3306"
-  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
-  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.dbType
   : MySQL
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.serverName
+  : 9.46.196.248
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.databaseName
   : MYSQL_DATABASE
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.trustStore
@@ -151,9 +144,21 @@ configurationVariables:
   : tcp
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.keyStore
   : ""
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionEnabled
+  : "false"
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.portNumber
+  : "3306"
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.driverType
   : mysql
+  ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
   ? artConnection.Kvv_0608_test745605Project.project.kvv_0608_test745605.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1.connectionSettings.user
   : siqatest
